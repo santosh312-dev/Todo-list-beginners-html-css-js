@@ -1,0 +1,26 @@
+#taskBox {
+  display: flex;
+  flex-direction: column;
+}
+.taskItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.completed {
+  text-decoration: line-through;
+}
+#taskInput{
+  width: 220px;
+  height: 25px;
+}
+#btn{
+  width: 100px;
+  height: 30px;
+}
+P{
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
+}

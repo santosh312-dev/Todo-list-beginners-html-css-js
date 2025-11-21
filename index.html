@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>My To-Do List</h2>
+
+    <form>
+      <input type="text" id="taskInput" placeholder="Enter a task" />
+      <button type="button" id="btn" onclick="addTask()">Add</button>
+    </form>
+
+    <!-- This is main task  box -->
+    <div id="taskBox">
+        <!-- individual task item -->
+      <div class="taskItem">
+        <p class="completed">Task1</p>
+        <button>Edit</button>
+        <button>Delete</button>
+      </div>
+      <!-- individual task end here -->
+    </div>
+    <!-- main task box end here -->
+
+  </body>
+</html>
+<script src="script.js"></script>
