@@ -1,26 +1,24 @@
-#taskBox {
-  display: flex;
-  flex-direction: column;
+body {
+  font-family: Arial;
+  background: #dfffd8;
+  padding: 20px;
 }
+
+#taskBox {
+  margin-top: 20px;
+}
+
 .taskItem {
   display: flex;
-  align-items: center;
-  gap: 5px;
+  gap: 10px;
+  margin-bottom: 8px;
 }
+
 .completed {
   text-decoration: line-through;
+  color: gray;
 }
-#taskInput{
-  width: 220px;
-  height: 25px;
-}
-#btn{
-  width: 100px;
-  height: 30px;
-}
-P{
-  cursor: pointer;
-}
-button{
+
+button {
   cursor: pointer;
 }

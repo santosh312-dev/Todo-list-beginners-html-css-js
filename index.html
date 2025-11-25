@@ -1,29 +1,32 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Simple To-Do List</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h2>My To-Do List</h2>
-
-    <form>
-      <input type="text" id="taskInput" placeholder="Enter a task" />
-      <button type="button" id="btn" onclick="addTask()">Add</button>
-    </form>
-
     <!-- This is main task  box -->
-    <div id="taskBox">
+    <!-- <div id="taskBox"> -->
         <!-- individual task item -->
-      <div class="taskItem">
+      <!-- <div class="taskItem">
         <p class="completed">Task1</p>
         <button>Edit</button>
         <button>Delete</button>
-      </div>
+      </div> -->
       <!-- individual task end here -->
-    </div>
+    <!-- </div> -->
     <!-- main task box end here -->
 
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>My To-Do List</h2>
+
+    <div>
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button id="addBtn" onclick="addTask()">Add</button>
+    </div>
+
+    <div id="taskBox"></div>
+
+    <script src="script.js"></script>
+</body>
 </html>
-<script src="script.js"></script>
