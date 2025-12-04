@@ -1,17 +1,94 @@
+/* ---------- GENERAL PAGE STYLE ---------- */
 body {
-  font-family: Arial;
-  background: #dfffd8;
-  padding: 20px;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #d7ffd9, #b7ffec);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Heading */
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #0a4d1a;
+  text-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+}
+
+/* ---------- INPUT SECTION ---------- */
+#taskInput {
+  width: 260px;
+  height: 45px;
+  padding: 0 15px;
+  border-radius: 12px;
+  border: 2px solid #0a4d1a;
+  outline: none;
+  background: #ffffff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#taskInput:focus {
+  border-color: #08a629;
+  box-shadow: 0px 0px 8px rgba(0, 255, 66, 0.4);
+}
+
+#addBtn {
+  cursor: pointer;
+  height: 45px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 12px;
+  background: #08a629;
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  transition: 0.3s ease;
+}
+
+#addBtn:hover {
+  background: #067e1f;
+  transform: scale(1.05);
+}
+
+/* ---------- TASK BOX ---------- */
 #taskBox {
-  margin-top: 20px;
+  margin-top: 25px;
+  width: 450px;
+  background: #ffffffba;
+  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
+/* ---------- TASK ITEM ---------- */
 .taskItem {
   display: flex;
-  gap: 10px;
-  margin-bottom: 8px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  background: #f7fff5;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-left: 4px solid #08a629;
+  transition: 0.25s ease;
+}
+
+.taskItem:hover {
+  transform: translateY(-3px);
+  background: #efffee;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Task text */
+.taskItem p {
+  flex: 1;
+  font-size: 17px;
+  cursor: pointer;
+  color: #084d16;
 }
 
 .completed {
@@ -19,6 +96,44 @@ body {
   color: gray;
 }
 
+/* ---------- BUTTONS ---------- */
 button {
   cursor: pointer;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+
+#editBtn {
+  background-color: #ffd93b;
+  color: #000;
+  margin-right: 6px;
+}
+
+#editBtn:hover {
+  background-color: #e8c231;
+  transform: scale(1.05);
+}
+
+#deleteBtn {
+  background-color: #ff4747;
+  color: white;
+}
+
+#deleteBtn:hover {
+  background-color: #d83434;
+  transform: scale(1.05);
+}
+
+/* Pointer for clickable text */
+.point {
+  cursor: pointer;
+}
+
+/* Placeholder styling */
+::placeholder {
+  padding-left: 2px;
+  color: #666;
 }

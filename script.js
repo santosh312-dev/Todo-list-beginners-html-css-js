@@ -39,6 +39,8 @@ function showTasks() {
         // Task text
         const taskText = document.createElement("p");
         taskText.textContent = task.name;
+        // taskText.style.cursor="pointer"
+        taskText.classList.add("point");
 
         // If completed, show crossed text
         if (task.completed) {
@@ -52,11 +54,13 @@ function showTasks() {
         const editBtn = document.createElement("button");
         editBtn.textContent = "Edit";
         editBtn.onclick = () => editTask(index);
+        editBtn.id="editBtn"
 
         // Delete button
         const delBtn = document.createElement("button");
         delBtn.textContent = "Delete";
         delBtn.onclick = () => deleteTask(index);
+        delBtn.id="deleteBtn"
 
         // Add all to item
         item.appendChild(taskText);
